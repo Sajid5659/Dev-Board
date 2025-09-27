@@ -18,7 +18,6 @@ function getTime() {
   let sec = time.getSeconds();
   let am_pm = "AM";
 
-//   am pm format
   if (hour >= 12) {
     if (hour > 12) {
       hour -= 12;
@@ -28,7 +27,7 @@ function getTime() {
     hour = 12;
     am_pm = "AM";
   }
-//  leading zero
+
   hour = hour < 10 ? "0" + hour : hour;
   min = min < 10 ? "0" + min : min;
   sec = sec < 10 ? "0" + sec : sec;

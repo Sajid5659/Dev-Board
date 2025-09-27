@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-blue-50 min-h-screen p-6">
+    <header>
+        <div class="navbar bg-base-100 shadow-sm flex justify-between">
+            <div class="flex items-center gap-2">
+                <img class="w-7" src="assets/logo.png" alt="">
+                <h1 class="font-bold text-lg text-gray-500">Dev <span class="text-black">Board</span></h1>
+            </div>
+            <div class="flex-none">
+                <button id="back-btn" class="btn bg-blue-600 rounded-md font bold text-white">Back to desc</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h1 class="text-center text-5xl  my-5 p-2 font-semibold">Blogs</h1>
+            <div>
+                <div class="bg-white rounded-xl mb-3" >
+                    <div class="mb-2 border-b border-black">
+                        <h3 class="font-semibold text-md p-5">Question-1: What are the different ways to select an element in DOM?</h3>
+                    </div>
+                    <div>
+                        <p class="text-sm p-4">In JavaScript, you can select DOM elements in a few main ways. Use getElementById("id") for a unique ID, getElementsByClassName("class") for a group of elements with the same class, and getElementsByTagName("tag")for all elements of a certain type like paragraph. The modern and most flexible methods are querySelector("selector") for a single match and querySelectorAll("selector") for multiple matches using CSS-style selectors.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl mb-3" >
+                    <div class="mb-2 border-b border-black">
+                        <h3 class="font-semibold text-md p-5">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h3>
+                    </div>
+                    <div>
+                        <p class="text-sm p-4">In JavaScript, innerHTML, innerText, and textContent are used to get or set content of an element, but they work differently. innerHTML returns or sets the HTML inside an element (including tags).innerText returns or sets only the visible text, respecting CSS styles like display: none. textContent returns or sets all text inside the element, including hidden text, but without any HTML formatting.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl mb-3" >
+                    <div class="mb-2 border-b border-black">
+                        <h3 class="font-semibold text-md p-5">Question-3: What is event delegation in the DOM?</h3>
+                    </div>
+                    <div>
+                        <p class="text-sm p-4">Event delegation is a technique in the DOM where instead of adding event listeners to multiple child elements, you add a single event listener to their parent element. This works because events bubble up from the child to the parent, allowing the parent to detect and handle events from its children. It makes the code more efficient and easier to manage, especially when elements are added dynamically.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl mb-3" >
+                    <div class="mb-2 border-b border-black">
+                        <h3 class="font-semibold text-md p-5">Question-4: What is event bubbling in the DOM?</h3>
+                    </div>
+                    <div>
+                        <p class="text-sm p-4">IEvent bubbling is the process in the DOM where an event starts from the target element (the one that was actually clicked or interacted with) and then bubbles up through its parent elements until it reaches the root document. For example, if you click a span inside a div, the event first fires on the span, then on the div, and continues up the DOM tree. This bubbling behavior is what makes features like **event delegation** possible.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl mb-3" >
+                    <div class="mb-2 border-b border-black">
+                        <h3 class="font-semibold text-md p-5">Question-5: How do you create, add, and remove elements using JavaScript?</h3>
+                    </div>
+                    <div>
+                        <p class="text-sm p-4">In JavaScript, you can create, add, and remove elements dynamically using DOM methods. To create a new element, you use document.createElement("tag") and can set its content with innerText or innerHTML. To add it to the page, you use appendChild or append on a parent element. To remove an element, you can either call element.remove() directly or use removeChild on its parent. These methods let you modify the webpage content on the fly without refreshing.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script/toggle.js"></script>
+</body>
+</html>
